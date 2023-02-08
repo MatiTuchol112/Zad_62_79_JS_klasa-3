@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Tuchowski - zadanie 73</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var a_tuc=prompt("Podaj Nazwisko");
+            var b_tuc=prompt("Podaj Imię");
+            a_tuc=(a_tuc.length%4)+5;
+            b_tuc=(b_tuc.length%6)+20;
+            for(let i = 0;i<a_tuc;i++)
+            {
+                if(i==0 || i==(a_tuc-1))
+                {
+                    for(let j = 0;j<b_tuc;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(let j = 2;j<b_tuc;j++)
+                    {
+                        document.write("&nbsp&nbsp")
+                    }
+                    document.write("*");
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
