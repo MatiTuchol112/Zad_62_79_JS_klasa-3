@@ -1,0 +1,43 @@
+<textarea cols="100" rows="100">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Tuchowski - Zadanie 74</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var l1_t_tuc,l2_t_tuc,pocz_tuc,tekst_tuc;
+            l1_t_tuc = parseFloat(prompt("Podaj 1-szą liczbę z przedzialu 20-60"));
+            if(l1_t_tuc < 20 || l1_t_tuc > 60)
+            {
+            document.write("liczba "+l1_t_tuc+" nie należy do przedziału<br>");
+            }
+            l2_t_tuc = parseFloat(prompt("Podaj 2-gą liczbę z przedzialu 20-60"));
+            if(l2_t_tuc < 20 || l2_t_tuc > 60)
+            {
+            
+            document.write("liczba "+l2_t_tuc+" nie należy do przedziału<br>");
+            }
+            pocz_tuc = parseFloat(prompt("Podaj wartość początkową wielkości tekstu"));
+            tekst_tuc = prompt("Podaj dowolny tekst");
+
+            if(l1_t_tuc<l2_t_tuc)
+            { //zwiekszanie
+                for(let i=pocz_tuc;i<=95;i+=5)
+                {
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_tuc+"<br></p>");
+                }
+            }
+            else
+            { // zmniejszanie
+                for(let i=pocz_tuc;i>=5;i-=5)
+                {
+                document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_tuc+"<br></p>");
+                }
+            }
+            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_tuc+"<br></p>");
+        </script>
+    </body>
+</html>
+</textarea>
